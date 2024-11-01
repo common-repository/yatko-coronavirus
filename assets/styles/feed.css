@@ -1,0 +1,115 @@
+.feed-header {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.feed-title {
+	margin-bottom: 0 !important;
+}
+
+/*selector*/
+
+.feed-selector {
+	max-width: 150px;
+	background: transparent;
+	border: none;
+}
+
+.feed-selector.blend-in {
+  position: relative;
+  display: inline-block;
+  /*width: 100%;*/
+}
+.blend-in select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0;
+  border-radius: 4;
+  background: $color-transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.blend-in select::-ms-expand {
+  display: none;
+}
+.blend-in select:hover {
+  background: rgba(237,237,237,0.4);
+}
+/*.select__arrow {
+  /*position: absolute;
+  top: 16px;
+  right: 15px;*!/
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0 5px;
+  border-color: #333 transparent transparent transparent;
+}*/
+
+/*feed text*/
+
+.feed-text {
+	transition: opacity linear .255s;
+}
+
+.feed-text .small, .feed-text p.small { 
+  font-size: smaller;
+}
+
+
+/*badge*/
+
+.center {
+	display: block;
+	text-align: -webkit-center;
+}
+.space-bottom {
+	margin-bottom: .9em;
+}
+
+/*input*/
+select.bounded {
+	max-width: 100px;
+}
+
+
+/*! CSS Used from: https://quarantine.country/assets/bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+strong{font-weight:bolder;}
+button{border-radius:0;}
+button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color;}
+button{margin:0;font-family:inherit;font-size:inherit;line-height:inherit;}
+button{overflow:visible;}
+button{text-transform:none;}
+button,html [type=button]{-webkit-appearance:button;}
+[type=button]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none;}
+.btn{display:inline-block;font-weight:400;text-align:center;white-space:nowrap;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid transparent;padding:.375rem .75rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+.btn:focus,.btn:hover{text-decoration:none;}
+.btn:focus{outline:0;box-shadow:0 0 0 .2rem rgba(0,123,255,.25);}
+.btn:disabled{opacity:.65;}
+.btn-danger{color:#fff;background-color:#dc3545;border-color:#dc3545;}
+.btn-danger:hover{color:#fff;background-color:#c82333;border-color:#bd2130;}
+.btn-danger:focus{box-shadow:0 0 0 .2rem rgba(220,53,69,.5);}
+.btn-danger:disabled{color:#fff;background-color:#dc3545;border-color:#dc3545;}
+.btn-group{position:relative;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;vertical-align:middle;}
+.btn-group>.btn{position:relative;-webkit-box-flex:0;-ms-flex:0 1 auto;flex:0 1 auto;}
+.btn-group>.btn:hover{z-index:1;}
+.btn-group>.btn:active,.btn-group>.btn:focus{z-index:1;}
+.btn-group>.btn:first-child{margin-left:0;}
+.badge{display:inline-block;padding:.25em .4em;font-size:75%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem;}
+.badge:empty{display:none;}
+.btn .badge{position:relative;top:-1px;}
+.badge-secondary{color:#fff;background-color:#6c757d;}
+.badge-success{color:#fff;background-color:#28a745;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+.badge{border:1px solid #000;}
+}
